@@ -1,3 +1,8 @@
+// variables
+$font-family: Arial, sans-serif;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
+$light-color: #f4f4f4;
 
 
 *{
@@ -5,4 +10,14 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+body{
+    background-color: $light-color;
+    font-family: $font-family;
+    line-height: 1.6;
+}
+
+.showcase{
+    background-color: $primary-color;
+    
 }
