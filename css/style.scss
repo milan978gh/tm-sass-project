@@ -9,6 +9,7 @@ $light-color: #f4f4f4;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 body{
@@ -16,8 +17,53 @@ body{
     font-family: $font-family;
     line-height: 1.6;
 }
-
+img{
+    width: 100%;
+}
 .showcase{
     background-color: $primary-color;
-    
+    color: #fff;
+    height: 600px;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        ul{
+            display: flex;
+        }
+        li{
+            padding: 15px;
+        }
+        a:hover{
+            color: $secondary-color;
+        }
+    }
+    a{
+        color: #fff;
+    }
+    &-content{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 50%;
+        }
+        h1{
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        p{
+            margin: 20px 0;
+        }
+    }
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    overflow: auto;
 }
