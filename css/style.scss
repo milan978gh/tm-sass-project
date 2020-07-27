@@ -1,8 +1,7 @@
-// variables
-$font-family: Arial, sans-serif;
-$primary-color: #0e6cff;
-$secondary-color: #ff8700;
-$light-color: #f4f4f4;
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
 
 
 *{
@@ -21,8 +20,7 @@ img{
     width: 100%;
 }
 .showcase{
-    background-color: $primary-color;
-    color: #fff;
+    @include set-background($primary-color);
     height: 600px;
 
     nav{
@@ -36,34 +34,29 @@ img{
         li{
             padding: 15px;
         }
+        a{
+            color: set-text-color($primary-color);
+        }
         a:hover{
             color: $secondary-color;
         }
-    }
-    a{
-        color: #fff;
     }
     &-content{
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
 
         img{
             width: 50%;
+            padding: 30px;
         }
         h1{
             font-size: 50px;
             line-height: 1.2;
         }
-        p{
-            margin: 20px 0;
-        }
     }
 }
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 30px;
-    overflow: auto;
-}
+
+@import 'mobile';
